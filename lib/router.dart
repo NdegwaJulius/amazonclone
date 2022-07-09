@@ -12,7 +12,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
         settings: routeSettings,
         builder: (_) => const Scaffold(
           body: Center(
-            child: Text('The Page Does Not Exist'),
+            child: Text('The Page Does Not Exist    '),
           ),
         ),
       );

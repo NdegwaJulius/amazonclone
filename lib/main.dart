@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home:  AuthScreen(),
+      home: const  AuthScreen(),
     );
   }
 }
