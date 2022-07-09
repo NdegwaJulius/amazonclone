@@ -32,7 +32,8 @@ class _AuthScreenState extends State<AuthScreen> {
               ),
               ),
               ListTile(
-                title: Text('Create Account',
+                title: Text(
+                  'Create Account',
                   style:TextStyle(
                     fontWeight: FontWeight.bold,
                   ) ,
