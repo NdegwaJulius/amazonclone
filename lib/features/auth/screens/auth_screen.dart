@@ -25,7 +25,7 @@ class _AuthScreenState extends State<AuthScreen> {
         padding: const EdgeInsets.all(8.0),
         child: SafeArea(
           child:Column(
-            children: const [
+            children:  [
               Text ('Welcome', style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w500,
