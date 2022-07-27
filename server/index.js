@@ -8,7 +8,7 @@ const authRouter = require('./routes/auth');
 const PORT = process.env.PORT || 3000;
 const app = express();
 const DB =
-"mongodb+srv://jul:amazon@cluster0.s3bet.mongodb.net/?retryWrites=true&w=majority";
+"mongodb+srv://<jul>:<amazon>@cluster0.s3bet.mongodb.net/?retryWrites=true&w=majority";
 //middleware
 app.use(authRouter);
 app.use(express.json());
