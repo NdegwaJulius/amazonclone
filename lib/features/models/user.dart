@@ -17,6 +17,8 @@ class User {
     required this.address,
     required this.type,
     required this.token,
+    required String email,
+    required List cart,
   });
 
   Map<String, dynamic> toMap() {

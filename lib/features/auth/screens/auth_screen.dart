@@ -24,24 +24,27 @@ class _AuthScreenState extends State<AuthScreen> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SafeArea(
-          child:Column(
-            children:  [
-              Text ('Welcome', style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w500,
-              ),
+          child: Column(
+            children: [
+              const Text(
+                'Welcome',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
               ListTile(
-                title: Text('Create Account',
-                  style:TextStyle(
+                title: const Text(
+                  'Create Account',
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
-                  ) ,
+                  ),
                 ),
                 leading: Radio(
                   activeColor: GlobalVariables.secondaryColor,
-                value:Auth.signup,
-                groupValue: _auth,
-                  onChanged: (Auth? val){
+                  value: Auth.signup,
+                  groupValue: _auth,
+                  onChanged: (Auth? val) {
                     setState(() {
                       _auth = val!;
                     });
@@ -49,7 +52,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 ),
               ),
             ],
-          ) ,
+          ),
         ),
       ),
     );
